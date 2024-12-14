@@ -6,7 +6,6 @@ body {
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
-    font-family: "MedievalSharp", cursive;
     font-weight: 400;
     font-style: normal;
     color: #333;
@@ -17,9 +16,14 @@ header {
     margin: 20px 0;
 }
 
+
 h1 {
-    color: rgb(66, 65, 66); /* Neon pink for the dramatic title */
-    font-family: 'Jacquard 24', cursive;
+    color: rgb(255, 140, 0); /* Neon pink for the dramatic title */
+    font-weight: bold;
+    text-shadow: 0 0 5px rgba(255, 140, 0, 0.8);
+    font-family: "MedievalSharp", serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: 2.5rem;
     text-transform: uppercase;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
@@ -27,22 +31,62 @@ h1 {
 }
 
 .intro-text {
-    text-align: center;
-    margin: 20px;
-    font-family: 'Oswald', sans-serif;
-    font-size: 1.2rem;
-    color: #fff;
+    background-color: #f9f9f9;
+    padding: 20px; 
+    border: 5px dashed #8B4513; 
+    border-radius: 8px; 
+    max-width: 800px; 
+    margin: 20px auto; 
+    text-align: center; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    font-family: "Playwrite NL Guides", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.intro-text p {
+    font-size: 1.2rem; 
+    color: #333; 
     line-height: 1.6;
 }
 
-
 .bold-underline {
     font-weight: bold;
-    color: rgb(0, 0, 0); /* Neon Cyan */
+    color: rgb(0, 0, 0);
 }
 
 .highlight {
-    color: rgb(255, 140, 0); /* Neon Orange */
+    color: rgb(255, 140, 0);
     font-weight: bold;
     text-shadow: 0 0 5px rgba(255, 140, 0, 0.8);
+}
+
+
+
+.right {
+    align-self: flex-end; 
+    margin-left: auto; 
+}
+
+a {
+    font-size: 3rem; 
+    color: #000000;
+    text-decoration: none; 
+    transition: color 0.3s, transform 0.3s; 
+}
+
+a:hover {
+    color: #ff1493; 
+    transform: scale(1.2); 
+}
+
+footer {
+    margin-top: auto;
+    text-align: center; 
+    padding: 20px; 
+}
+
+footer p {
+    font-size: 12px;
+    margin: 0;
 }
