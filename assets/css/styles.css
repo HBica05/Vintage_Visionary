@@ -1,0 +1,56 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-image: url('../images/retro_img.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h1 {
+    color:rgb(29, 236, 255);
+}
+
+.main-content {
+    flex-grow: 1;
+}
+
+.main-content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.right {
+    align-self: flex-end; /* Align these images to the right */
+    margin-left: auto; /* Push them to the right side */
+}
+
+a {
+    color: #39FF14; /* Neon Green color */
+    font-size: 1.5rem; /* Increase font size for more impact */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make the text bold */
+    position: relative; /* Allow positioning for the glow effect */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+a:hover {
+    color: #FF1493; /* Neon Pink color when hovered */
+    text-shadow: 0 0 5px #39FF14, 0 0 10px #39FF14, 0 0 15px #39FF14, 0 0 20px #39FF14, 0 0 25px #39FF14; /* Glowing neon text effect */
+}
+
+footer {
+    margin-top: auto; 
+}
+
+footer p {
+    font-size: 12px;
+    margin: 0;
+}
