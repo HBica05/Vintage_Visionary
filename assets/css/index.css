@@ -33,7 +33,7 @@ h1 {
 }
 
 a {
-    color: #14e0ff; /* Neon Green color */
+    color: #141cff; /* Neon Green color */
     font-size: 1.5rem; /* Increase font size for more impact */
     text-decoration: none; /* Remove underline */
     font-weight: bold; /* Make the text bold */
@@ -43,7 +43,7 @@ a {
 
 a:hover {
     color: #FF1493; 
-    text-shadow: 0 0 5px #14e0ff, 0 0 10px #14e0ff, 0 0 15px #14e0ff, 0 0 20px #14e0ff, 0 0 25px #14e0ff; 
+    text-shadow: 0 0 5px #efff14, 0 0 10px #e0ff14, 0 0 15px #d8ff14, 0 0 20px #d8ff14, 0 0 25px #fff714; 
 }
 
 footer {

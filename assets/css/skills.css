@@ -1,0 +1,9 @@
+body{
+    display: flex;
+    flex-direction: column;
+    background-image: url('../images/vintage_tv.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
