@@ -6,4 +6,26 @@ body{
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
+    height: 100vh;
+    justify-content: center;
+    align-items: center; 
+    text-align: center; 
+    transform: translate(-8%, -10%);
+}
+
+p {
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+ul {
+    list-style-type: none;
+    font-size: 1.2rem;
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+li {
+    margin: 5px;
 }
