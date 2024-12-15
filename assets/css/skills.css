@@ -10,13 +10,17 @@ body{
     justify-content: center;
     align-items: center; 
     text-align: center; 
-    transform: translate(-8%, -10%);
+    transform: translate(-8%, -5%);
+
+}
+
+h1 {
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8); 
 }
 
 p {
-    font-size: 2rem;
-    color: rgb(0, 0, 0);
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    font-size: 1rem;
 }
 
 ul {
@@ -24,8 +28,23 @@ ul {
     font-size: 1.2rem;
     color: rgb(0, 0, 0);
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    text-transform: uppercase;
+    letter-spacing: 1px; 
 }
 
 li {
     margin: 5px;
+}
+
+footer {
+    position: fixed; /* Fixes the footer in place relative to the viewport */
+    bottom: 0; /* Aligns the footer to the bottom */
+    left: 0; /* Aligns the footer to the left */
+    width: 100%; /* Ensures the footer spans the full width */
+    text-align: center; /* Centers the text in the footer */
+    padding: 10px 0; /* Adds padding to the footer for better spacing */
+    color: white; /* White text color */
+    font-size: 2rem; /* Adjust the font size */
+    font-family: 'Press Start 2P', monospace; /* Uses the same retro font */
+    z-index: 10; /* Ensures the footer stays above other content */
 }
