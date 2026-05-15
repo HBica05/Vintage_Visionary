@@ -41,32 +41,18 @@ Originally created for a hackathon, the project grew into a full creative showca
 ## 📁 Project Structure
 
 ```
-vintage-visionary/
-│
-├── index.html          # Home page — GIF parade & welcome
-├── about.html          # About page — letter-style bio
-├── skills.html         # Skills page — retro game stat screen
-│
-├── assets/
-│   ├── css/
-│   │   ├── base.css    # Shared styles (scanlines, footer, nav, GIF frames)
-│   │   ├── index.css   # Home page styles
-│   │   ├── about.css   # About page styles
-│   │   └── skills.css  # Skills page styles
-│   │
-│   ├── js/
-│   │   └── main.js     # Audio toggle, star background, scroll reveal
-│   │
-│   ├── audio/
-│   │   ├── simple.mp3              # Home page BGM
-│   │   └── vintage_sound(1).mp3   # About page BGM
-│   │
-│   └── images/
-│       ├── retro_img.jpg      # Home page background
-│       ├── old_paper.jpg      # About page background
-│       └── vintage_tv.webp    # Skills page background
-│
-└── README.md
+assets/
+├── audio/
+│   ├── simple.mp3
+│   └── vintage_sound.mp3
+├── css/
+│   └── base.css
+├── images/
+│   ├── retro_img.jpg
+│   ├── old_paper.jpg
+│   └── vintage_tv.webp
+└── js/
+    └── main.js
 ```
 
 ---
@@ -121,8 +107,10 @@ Stylesheets were tested using the [W3C CSS Validator (Jigsaw)](https://jigsaw.w3
 
 ## 🐞 Known Bugs
 
-- No bugs currently identified.
-- *Note: Some archived GeoCity GIFs may fail to load if the Wayback Machine is slow or unavailable — this is an external dependency outside the project's control.*
+- Audio file `vintage_sound(1).mp3` was renamed to `vintage_sound.mp3` 
+  to fix a path error caused by special characters in the filename. ✅ Fixed.
+- `main.js` was initially missing from the project, causing the audio 
+  toggle button to fail silently. ✅ Fixed.
 
 ---
 
