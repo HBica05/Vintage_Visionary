@@ -1,31 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
-    <title>My Skills</title>
-    <link rel="stylesheet" href="assets/css/skills.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Skills | Vintage Visionary</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet" />
+  <!-- NES.css -->
+  <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/skills.css" />
 </head>
 <body>
- 
-    <h1> My skills:</h1>
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JAVASCRIPT</li>
-        <li>PYTHON</li>
-        <li>NODE.JS</li>
-        <li>BOOTSTRAP</li>
-        <li>JQUERY</li>
-    </ul>
-    <img src="https://web.archive.org/web/20091026222647/http://www.geocities.com/kissenhouse/cat_black_run.gif" alt="black cat gif">
 
-    <img src="https://web.archive.org/web/20091027091939/http://geocities.com/jojunkfood/goback_bg.gif" alt="go back gif">
-    <p><a href="about.html">Back</a></p>
+  <div class="scanlines"></div>
 
-    <footer><p>© 1996. All rights reserved.</p></footer>
+  <!-- ===== HEADER ===== -->
+  <header>
+    <div class="header-marquee">
+      <marquee behavior="scroll" direction="left" scrollamount="4">
+        🎮 SKILL SELECT SCREEN 🎮 &nbsp;&nbsp;&nbsp; ⭐ CHOOSE YOUR FIGHTER ⭐ &nbsp;&nbsp;&nbsp;
+        🕹️ HAADIYAH'S POWER MOVES 🕹️ &nbsp;&nbsp;&nbsp;
+      </marquee>
+    </div>
+    <h1>SKILL SELECT<br/><span class="subtitle">— PLAYER 1 —</span></h1>
+    <nav class="pixel-nav">
+      <a href="index.html" class="nes-btn">🏠 HOME</a>
+      <a href="about.html" class="nes-btn is-primary">👤 ABOUT</a>
+    </nav>
+  </header>
 
+  <!-- ===== MAIN ===== -->
+  <main>
+
+    <!-- Health bar style intro -->
+    <div class="player-card nes-container is-dark with-title">
+      <p class="title">PLAYER STATS</p>
+      <div class="player-row">
+        <div class="gif-frame small">
+          <img src="https://web.archive.org/web/20091026222647/http://www.geocities.com/kissenhouse/cat_black_run.gif" alt="black cat running" />
+          <span class="gif-caption">H.BICA</span>
+        </div>
+        <div class="hp-section">
+          <p>HAADIYAH BICA</p>
+          <p class="role-label">FULL-STACK DEVELOPER IN TRAINING</p>
+          <div class="nes-progress is-success hp-bar">
+            <progress class="nes-progress is-success" value="72" max="100"></progress>
+          </div>
+          <span class="hp-label">XP: 72 / 100</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skills grid -->
+    <h2 class="skills-heading">⚡ ABILITIES ⚡</h2>
+    <div class="skills-grid">
+
+      <div class="skill-card nes-container is-rounded">
+        <div class="skill-icon">🌐</div>
+        <div class="skill-name">HTML5</div>
+        <progress class="nes-progress is-success" value="90" max="100"></progress>
+        <span class="skill-level">LVL 9</span>
+      </div>
+
+      <div class="skill-card nes-container is-rounded">
+        <div class="skill-icon">🎨</div>
+        <div class="skill-name">CSS3</div>
+        <progress class="nes-progress is-warning" value="85" max="100"></progress>
+        <span class="skill-level">LVL 8</span>
+      </div>
+
+      <div class="skill-card nes-container is-rounded">
+        <div class="skill-icon">⚡</div>
+        <div class="skill-name">JAVASCRIPT</div>
+        <progress class="nes-progress is-primary" value="75" max="100"></progress>
+        <span class="skill-level">LVL 7</span>
+      </div>
+
+      <div class="skill-card nes-container is-rounded">
+        <div class="skill-icon">🐍</div>
+        <div class="skill-name">PYTHON</div>
+        <progress class="nes-progress is-error" value="70" max="100"></progress>
+        <span class="skill-level">LVL 7</span>
+      </div>
+
+      <div class="skill-card nes-container is-rounded">
+        <div class="skill-icon">🟢</div>
+        <div class="skill-name">NODE.JS</div>
+        <progress class="nes-progress is-success" value="60" max="100"></progress>
+        <span class="skill-level">LVL 6</span>
+      </div>
+
+      <div class="skill-card nes-container is-rounded">
+        <div class="skill-icon">🅱️</div>
+        <div class="skill-name">BOOTSTRAP</div>
+        <progress class="nes-progress is-primary" value="80" max="100"></progress>
+        <span class="skill-level">LVL 8</span>
+      </div>
+
+      <div class="skill-card nes-container is-rounded">
+        <div class="skill-icon">💲</div>
+        <div class="skill-name">JQUERY</div>
+        <progress class="nes-progress is-warning" value="65" max="100"></progress>
+        <span class="skill-level">LVL 6</span>
+      </div>
+
+      <div class="skill-card nes-container is-rounded">
+        <div class="skill-icon">🎮</div>
+        <div class="skill-name">DJANGO</div>
+        <progress class="nes-progress is-success" value="68" max="100"></progress>
+        <span class="skill-level">LVL 6</span>
+      </div>
+
+    </div>
+
+    <!-- Special moves -->
+    <div class="special-moves nes-container is-dark with-title">
+      <p class="title">🌟 SPECIAL MOVES</p>
+      <ul class="nes-list is-circle">
+        <li>Responsive Design Combo ✨</li>
+        <li>REST API Summoner 🔮</li>
+        <li>Git Push Ultra 🚀</li>
+        <li>Debug Overdrive 🐛➡️💥</li>
+      </ul>
+    </div>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-links">
+      <a href="https://github.com/HBica05" target="_blank" rel="noopener">
+        <i class="nes-icon github is-medium"></i> GitHub
+      </a>
+      <a href="https://www.linkedin.com/in/haadiyah-bica-34b182302/" target="_blank" rel="noopener">
+        <i class="nes-icon linkedin is-medium"></i> LinkedIn
+      </a>
+    </div>
+    <p class="footer-copy">© 1996 Haadiyah Bica. All rights reserved. INSERT COIN TO CONTINUE.</p>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
 </body>
 </html>

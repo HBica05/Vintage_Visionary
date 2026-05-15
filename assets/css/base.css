@@ -1,0 +1,154 @@
+/* =============================================
+   VINTAGE VISIONARY — SHARED BASE STYLES
+   ============================================= */
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* Scanline overlay — the classic CRT feel */
+.scanlines {
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    to bottom,
+    transparent,
+    transparent 2px,
+    rgba(0, 0, 0, 0.08) 2px,
+    rgba(0, 0, 0, 0.08) 4px
+  );
+}
+
+/* ===== TYPOGRAPHY ===== */
+body {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 12px;
+  line-height: 1.8;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== HEADER ===== */
+header {
+  text-align: center;
+  padding: 1rem;
+  border-bottom: 4px solid;
+}
+
+.header-marquee {
+  font-size: 10px;
+  padding: 6px 0;
+  margin-bottom: 0.5rem;
+}
+
+.pixel-nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.pixel-nav a {
+  font-size: 10px;
+  text-decoration: none;
+}
+
+/* ===== AUDIO BAR ===== */
+.audio-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 8px 1rem;
+  font-size: 10px;
+}
+
+.audio-btn {
+  font-size: 9px !important;
+  padding: 4px 10px !important;
+  cursor: pointer;
+}
+
+/* ===== GIF FRAMES ===== */
+.gif-row {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 1.5rem 1rem;
+}
+
+.gif-frame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.gif-frame img {
+  max-width: 120px;
+  height: auto;
+  image-rendering: pixelated;
+  border: 3px solid;
+  padding: 4px;
+}
+
+.gif-frame.small img { max-width: 80px; }
+
+.gif-caption {
+  font-size: 8px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  margin-top: auto;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  border-top: 4px solid;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 10px;
+  text-decoration: none;
+  transition: transform 0.2s;
+}
+
+.footer-links a:hover { transform: scale(1.1); }
+
+.footer-copy {
+  font-size: 8px;
+  opacity: 0.7;
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
+
+@keyframes glow-pulse {
+  0%, 100% { text-shadow: 0 0 5px currentColor, 0 0 10px currentColor; }
+  50%       { text-shadow: 0 0 15px currentColor, 0 0 30px currentColor, 0 0 45px currentColor; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-8px); }
+}
+
+.blink { animation: blink 1s step-end infinite; }

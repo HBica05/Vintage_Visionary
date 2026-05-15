@@ -1,47 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet">
-    <title>Vintage Visionary</title>
-    <link rel="stylesheet" href="assets/css/index.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Vintage Visionary — the retro portfolio of Haadiyah Bica, Full-Stack Developer." />
+  <title>Vintage Visionary 🌟</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet" />
+  <!-- NES.css -->
+  <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/index.css" />
 </head>
 <body>
-    <header>
-        <h1>VINTAGE VISIONARY</h1>
-    </header>
 
-    <audio autoplay loop muted>
-        <source src="assets/audio/simple.mp3" type="audio/mp3">
-        Your browser does not support the audio element.
+  <!-- Scanline overlay -->
+  <div class="scanlines"></div>
+
+  <!-- Stars background -->
+  <div class="stars" id="stars"></div>
+
+  <!-- ===== HEADER ===== -->
+  <header>
+    <div class="header-marquee">
+      <marquee behavior="scroll" direction="left" scrollamount="4">
+        ✨ WELCOME TO VINTAGE VISIONARY ✨ &nbsp;&nbsp;&nbsp; 🌟 EST. 1996 🌟 &nbsp;&nbsp;&nbsp;
+        ✨ FULL-STACK DEVELOPER IN TRAINING ✨ &nbsp;&nbsp;&nbsp; 🎮 CODE INSTITUTE DUBLIN 🎮 &nbsp;&nbsp;&nbsp;
+      </marquee>
+    </div>
+    <h1 class="site-title">
+      <span class="title-pixel">VINTAGE</span>
+      <span class="title-pixel glow-pink">VISIONARY</span>
+    </h1>
+    <div class="header-blink">⭐ HAADIYAH BICA ⭐ PORTFOLIO ⭐ 1996 ⭐</div>
+  </header>
+
+  <!-- ===== AUDIO (user-controlled) ===== -->
+  <div class="audio-bar">
+    <span class="audio-label">🎵 BGM:</span>
+    <audio id="bgm" loop>
+      <source src="assets/audio/simple.mp3" type="audio/mp3" />
     </audio>
+    <button class="nes-btn is-warning audio-btn" id="audioToggle" onclick="toggleAudio()">▶ PLAY</button>
+  </div>
 
-    <main class="main-content">
-        <img class="right" src="https://web.archive.org/web/20090829052409/http://www.geocities.com/sbenzvi/sun_playing_with_beach_ball_md_clr.gif" alt="sun playing" >
-        <img src="https://web.archive.org/web/20090830112133/http://geocities.com/catlovera/Bear_walks_2.gif" alt="cat gif">
-        <img class="right" src="https://web.archive.org/web/20090726015015/http://www.geocities.com/autograph_cat/a_c_logo3.gif" alt="cat gif">
-        <img src="https://web.archive.org/web/20090830052209/http://geocities.com/Hollywood/Studio/5528/clown.gif" alt="clown gif">
-        <img src="https://web.archive.org/web/20091026064154/http://geocities.com/CapeCanaveral/Hangar/2501/images/Funplane.gif" alt="funplane gif">
-        <img class="right" src="https://web.archive.org/web/20090820100529/http://geocities.com/arkoutdoors/walking.gif" alt="">
-        <br>
-        <p style="color: aliceblue;">Welcome to my Circus</p>
-        <p style="color: aliceblue;">Check out the gifs and read
-            <br> a little about me.</p>
-        <p style="color: aliceblue;">Have fun!</p>
-    </main>
-    
-        
-    <a href="about.html">Click here!</a>
-    
-    <footer>
-        <a href="https://github.com/HBica05"><i class="nes-icon github is-large"></i></a>
-        <a href="https://www.linkedin.com/in/haadiyah-bica-34b182302/?trk=opento_sprofile_details"><i class="nes-icon linkedin is-large"></i></a>
-        
-        <p>© 1996. All rights reserved.</p>
-    </footer>
+  <!-- ===== MAIN ===== -->
+  <main class="main-content">
+
+    <!-- GIF parade row 1 -->
+    <div class="gif-row">
+      <div class="gif-frame">
+        <img src="https://web.archive.org/web/20090829052409/http://www.geocities.com/sbenzvi/sun_playing_with_beach_ball_md_clr.gif" alt="sun playing with beach ball" />
+        <span class="gif-caption">SUNNY DAYS</span>
+      </div>
+      <div class="gif-frame">
+        <img src="https://web.archive.org/web/20090830112133/http://geocities.com/catlovera/Bear_walks_2.gif" alt="walking bear" />
+        <span class="gif-caption">BEAR WALK</span>
+      </div>
+      <div class="gif-frame">
+        <img src="https://web.archive.org/web/20090726015015/http://www.geocities.com/autograph_cat/a_c_logo3.gif" alt="cat logo" />
+        <span class="gif-caption">COOL CAT</span>
+      </div>
+    </div>
+
+    <!-- Welcome box -->
+    <div class="nes-container is-dark with-title welcome-box">
+      <p class="title">★ WELCOME ★</p>
+      <p>Welcome to my Circus! 🎪</p>
+      <p>Check out the GIFs and read a little about me.</p>
+      <p>Have fun! 🕹️</p>
+      <div class="welcome-btns">
+        <a href="about.html" class="nes-btn is-primary">ABOUT ME</a>
+        <a href="skills.html" class="nes-btn is-success">MY SKILLS</a>
+      </div>
+    </div>
+
+    <!-- GIF parade row 2 -->
+    <div class="gif-row">
+      <div class="gif-frame">
+        <img src="https://web.archive.org/web/20090830052209/http://geocities.com/Hollywood/Studio/5528/clown.gif" alt="clown" />
+        <span class="gif-caption">THE JESTER</span>
+      </div>
+      <div class="gif-frame">
+        <img src="https://web.archive.org/web/20091026064154/http://geocities.com/CapeCanaveral/Hangar/2501/images/Funplane.gif" alt="fun plane" />
+        <span class="gif-caption">FUN PLANE</span>
+      </div>
+      <div class="gif-frame">
+        <img src="https://web.archive.org/web/20090820100529/http://geocities.com/arkoutdoors/walking.gif" alt="walking figure" />
+        <span class="gif-caption">ON THE MOVE</span>
+      </div>
+    </div>
+
+    <!-- Hit counter -->
+    <div class="hit-counter">
+      <span>👁 VISITORS:</span>
+      <span class="counter-num" id="counter">001996</span>
+    </div>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-links">
+      <a href="https://github.com/HBica05" target="_blank" rel="noopener">
+        <i class="nes-icon github is-medium"></i> GitHub
+      </a>
+      <a href="https://www.linkedin.com/in/haadiyah-bica-34b182302/" target="_blank" rel="noopener">
+        <i class="nes-icon linkedin is-medium"></i> LinkedIn
+      </a>
+    </div>
+    <p class="footer-copy">© 1996 Haadiyah Bica. All rights reserved. 🌟 Best viewed in Netscape Navigator.</p>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
-
-

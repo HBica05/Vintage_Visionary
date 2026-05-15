@@ -1,51 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
-    <link rel="stylesheet" href="assets/css/about.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jacquard+12&family=Jacquard+24&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=MedievalSharp&family=Oswald:wght@200..700&family=Playwrite+NL+Guides&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me | Vintage Visionary</title>
 
-   
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=MedievalSharp&family=Playwrite+NL+Guides&display=swap" rel="stylesheet" />
+  <!-- NES.css -->
+  <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/about.css" />
 </head>
 <body>
-    <header>
-        <h1>FROM THE DESK OF A FUTURE FULL-STACK DEVELOPER</h1>
-    </header>
 
-    <audio autoplay loop muted>
-        <source src="assets/audio/vintage_sound(1).mp3" type="audio/mp3" > 
-        Your browser does not support the audio element.
-    </audio> 
+  <div class="scanlines"></div>
 
-    <div class="intro-text">
-        <p><span class="bold-underline">Dear Visitor,</span></p>
-        <p>Welcome to my virtual portfolio! I am <strong>an aspiring Full-Stack Software Developer</strong> student at <a href="https://codeinstitute.net/global/">Code Institute</a> embarking on a journey through the boundless realms of <span class="highlight">coding</span>, <span class="highlight">development</span>, and <span class="highlight">innovation</span>.</p>
-        <p>With an unquenchable thirst for knowledge and a passion for creating impactful solutions, I am diligently learning and mastering the art of both front-end and back-end development.</p>
-        <p>Though my <a href="skills.html" >skill</a> set is constantly evolving, my commitment to delivering <span class="highlight">user-friendly</span> and <span class="highlight">robust</span> applications remains my constant driving force.</p>
-        
-        <p><span class="bold-underline">Join me on this wild ride as I build, learn, and grow!</span></p>
-        
-        <p>In the near future, I will have fully functional projects to showcase the power of my abilities. Stay tuned!</p>
-        <p>Yours faithfully,</p>
-        <p>Haadiyah</p>
+  <!-- ===== HEADER ===== -->
+  <header>
+    <div class="header-marquee">
+      <marquee behavior="scroll" direction="left" scrollamount="3">
+        📜 FROM THE DESK OF A FUTURE FULL-STACK DEVELOPER 📜 &nbsp;&nbsp;&nbsp;
+        🌟 CODE INSTITUTE DUBLIN 🌟 &nbsp;&nbsp;&nbsp;
+        📜 FRONT-END SPECIALIST 📜 &nbsp;&nbsp;&nbsp;
+      </marquee>
     </div>
-    <img class="right" src="https://web.archive.org/web/20091026214424/http://geocities.com/carmen_furtado/mail01.gif" alt="girl with back sign gif">
-    <br>
-    <br>
-    <img class="right" src="https://web.archive.org/web/20091028083441/http://www.geocities.com/pndtpa/poems/a_brownkitty.gif" alt="brown Kitty gif">
-    <p><img src="https://web.archive.org/web/20091020112800/http://hk.geocities.com/karenkayan/b548back.gif" alt="back-sign gif"></p>
-    <p><a href="index.html"> &larr;</a></p>
-    
-    <footer>
-        <a href="https://github.com/HBica05">Github</a>
-        <a href="https://www.linkedin.com/in/haadiyah-bica-34b182302/?trk=opento_sprofile_details"> LinkeIn</a>
-        
-        <p>© 1996. All rights reserved.</p>
-    </footer>    
+    <h1>FROM THE DESK OF<br/><span class="title-name">HAADIYAH BICA</span></h1>
+    <nav class="pixel-nav">
+      <a href="index.html" class="nes-btn">🏠 HOME</a>
+      <a href="skills.html" class="nes-btn is-success">🎮 SKILLS</a>
+    </nav>
+  </header>
+
+  <!-- ===== AUDIO ===== -->
+  <div class="audio-bar">
+    <span class="audio-label">🎵 BGM:</span>
+    <audio id="bgm" loop>
+      <source src="assets/audio/vintage_sound(1).mp3" type="audio/mp3" />
+    </audio>
+    <button class="nes-btn is-warning audio-btn" onclick="toggleAudio()">▶ PLAY</button>
+  </div>
+
+  <!-- ===== MAIN ===== -->
+  <main>
+    <div class="about-layout">
+
+      <!-- Letter box -->
+      <div class="letter-box">
+        <div class="letter-header">
+          <span>TO: Dear Visitor</span>
+          <span>DATE: circa 1996</span>
+        </div>
+        <div class="letter-body">
+          <p><span class="bold-underline">Dear Visitor,</span></p>
+          <p>
+            Welcome to my virtual portfolio! I am <strong>an aspiring Full-Stack Software Developer</strong>
+            studying at <a href="https://codeinstitute.net/global/" target="_blank">Code Institute</a> —
+            embarking on a journey through the boundless realms of
+            <span class="highlight">coding</span>,
+            <span class="highlight">development</span>, and
+            <span class="highlight">innovation</span>.
+          </p>
+          <p>
+            With an unquenchable thirst for knowledge and a passion for creating impactful solutions,
+            I am diligently mastering the art of both front-end and back-end development.
+          </p>
+          <p>
+            Though my <a href="skills.html">skill set</a> is constantly evolving, my commitment to
+            delivering <span class="highlight">user-friendly</span> and
+            <span class="highlight">robust</span> applications remains my constant driving force.
+          </p>
+          <p class="bold-underline">Join me on this wild ride as I build, learn, and grow!</p>
+          <p>In the near future, I will have fully functional projects to showcase the power of my abilities. Stay tuned!</p>
+          <p class="sign-off">Yours faithfully,<br/><strong>Haadiyah</strong> ✍️</p>
+        </div>
+        <div class="letter-stamp">📮</div>
+      </div>
+
+      <!-- Side GIFs -->
+      <div class="side-gifs">
+        <div class="gif-frame">
+          <img src="https://web.archive.org/web/20091026214424/http://geocities.com/carmen_furtado/mail01.gif" alt="girl with back sign" />
+          <span class="gif-caption">GOT MAIL?</span>
+        </div>
+        <div class="gif-frame" style="margin-top: 1.5rem;">
+          <img src="https://web.archive.org/web/20091028083441/http://www.geocities.com/pndtpa/poems/a_brownkitty.gif" alt="brown kitty" />
+          <span class="gif-caption">KITTY SAYS HI</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Stat cards -->
+    <div class="stat-row">
+      <div class="nes-container is-dark stat-card">
+        <p class="stat-icon">🎓</p>
+        <p class="stat-label">EDUCATION</p>
+        <p class="stat-val">Code Institute<br/>Dublin</p>
+      </div>
+      <div class="nes-container is-dark stat-card">
+        <p class="stat-icon">💻</p>
+        <p class="stat-label">FOCUS</p>
+        <p class="stat-val">Full-Stack<br/>Dev</p>
+      </div>
+      <div class="nes-container is-dark stat-card">
+        <p class="stat-icon">⚡</p>
+        <p class="stat-label">SPECIALITY</p>
+        <p class="stat-val">Front-End<br/>Magic</p>
+      </div>
+      <div class="nes-container is-dark stat-card">
+        <p class="stat-icon">🌍</p>
+        <p class="stat-label">BASED IN</p>
+        <p class="stat-val">Dublin,<br/>Ireland</p>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-links">
+      <a href="https://github.com/HBica05" target="_blank" rel="noopener">
+        <i class="nes-icon github is-medium"></i> GitHub
+      </a>
+      <a href="https://www.linkedin.com/in/haadiyah-bica-34b182302/" target="_blank" rel="noopener">
+        <i class="nes-icon linkedin is-medium"></i> LinkedIn
+      </a>
+    </div>
+    <p class="footer-copy">© 1996 Haadiyah Bica. All rights reserved.</p>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
-

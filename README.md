@@ -1,70 +1,182 @@
-# 🖥️💡 Vintage Visionary
+# 🖥️ Vintage Visionary
 
-Welcome to my Vintage Visionary portfolio! This site is a nostalgic throwback to the early days of the internet, designed with the aesthetic of the mid-90s web. With retro fonts, gifs and a classic layout, this site captures the charm of the early web era, offering a glimpse into the personal and professional aspects of my journey.
+> *A nostalgic trip to the early internet — built by a future full-stack developer.*
 
-## 🎨 Features:
-* Classic 1996 Design: Inspired by the simple and iconic designs of the '90s, this website uses elements such as bright backgrounds, animated GIFs, and text-based navigation that recall the charm of early web pages.
-  
-* Responsive Layout: While we’re celebrating the past, I’ve made sure the site works well on modern devices, with simple CSS that ensures a smooth viewing experience on both desktop and mobile.
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![NES.css](https://img.shields.io/badge/NES.css-000000?style=for-the-badge&logo=nintendo&logoColor=white)
 
-* Skills Showcase: A dedicated section highlighting my technical skills in HTML and CSS, presented in a fun and nostalgic way.
+---
 
-* Vintage Touch: The site includes elements like old-school "Guestbook" features (using modern methods) and simple image animations, reminiscent of early web designs.
+## 📖 About the Project
 
-## 🌟 Purpose:
-This website was created for fun and as a way to travel through creativity. It’s a tribute to the early internet era, when websites were simple, colorful, and full of personality. The design captures the spirit of the 1990s web, featuring elements like pixelated fonts, animated GIFs, and basic HTML layouts.
+**Vintage Visionary** is a personal portfolio website built as a love letter to the early days of the internet. Designed with the aesthetic of the mid-90s web — complete with pixelated fonts, animated GIFs, scanline overlays, and retro colour palettes — this site blends nostalgia with modern web standards.
 
-Through this project, I aim to offer an experience that is both a nostalgic trip for those who remember the early days of the web and a creative playground for those exploring web design today. Whether you are a fellow developer or simply a visitor, I hope this site sparks some joy and inspiration!
+Originally created for a hackathon, the project grew into a full creative showcase of my journey as a student at **Code Institute Dublin**, where I specialise in front-end development.
 
-## 🔧🖥️ Technologies Used:
+---
 
-* HTML: The backbone of the website, using basic, clean HTML for structure.
+## 🌐 Live Demo
 
-* CSS: Styled using simple CSS, with retro design choices like pixelated fonts, vivid colors, and glowing text effects.
-  
-* Images and GIFs: All images and animated GIFs are chosen to reflect the fun, quirky vibe of 1990s web culture.
+🔗 [View the live site](https://vintage-visionary.vercel.app/)
 
-## 🐞 Bugs
-- No bugs remaining.
+---
 
-## Testing: 
-* HTML:
-  - The HTML was run through the W3C HTML Validator and no errors:
-  
-  ![alt text](image.png)
+## 🎨 Features
 
-* CSS:
-  - The CSS was tested using the W3C CSS Validator with no errors:
-  
-  ![alt text](image-1.png)
+| Feature | Description |
+|---|---|
+| 🕹️ Retro Design | Inspired by 1996-era GeoCities sites, with pixel fonts, vivid colours, and animated GIFs |
+| 📺 CRT Scanline Effect | CSS overlay recreates the look of an old cathode-ray tube monitor |
+| 🎵 Optional BGM | Background music player with a user-controlled toggle — no autoplay surprises |
+| 🎮 Skill Select Screen | Skills page designed like a retro video game character select screen with XP bars |
+| 📜 Letter-style About Page | About Me written as a handwritten letter with a dashed-border paper card |
+| ✨ Scroll Animations | Elements fade and rise in on scroll using the Intersection Observer API |
+| 📱 Responsive Layout | Works on desktop and mobile, despite the retro aesthetic |
+| ⭐ Consistent Navigation | Shared nav, footer, and audio bar across all pages |
 
+---
 
-## 🧐 How to View:
-This portfolio is best viewed in a modern browser for full compatibility with HTML5 and CSS3 standards, but it also has a nostalgic touch with elements that resemble older web pages. Make sure to enable images and be ready for a trip down memory lane with those animated GIFs!
+## 📁 Project Structure
+
+```
+vintage-visionary/
+│
+├── index.html          # Home page — GIF parade & welcome
+├── about.html          # About page — letter-style bio
+├── skills.html         # Skills page — retro game stat screen
+│
+├── assets/
+│   ├── css/
+│   │   ├── base.css    # Shared styles (scanlines, footer, nav, GIF frames)
+│   │   ├── index.css   # Home page styles
+│   │   ├── about.css   # About page styles
+│   │   └── skills.css  # Skills page styles
+│   │
+│   ├── js/
+│   │   └── main.js     # Audio toggle, star background, scroll reveal
+│   │
+│   ├── audio/
+│   │   ├── simple.mp3              # Home page BGM
+│   │   └── vintage_sound(1).mp3   # About page BGM
+│   │
+│   └── images/
+│       ├── retro_img.jpg      # Home page background
+│       ├── old_paper.jpg      # About page background
+│       └── vintage_tv.webp    # Skills page background
+│
+└── README.md
+```
+
+---
+
+## 🔧 Technologies Used
+
+- **HTML5** — Semantic, clean structure across all three pages
+- **CSS3** — Custom retro styles: pixelated fonts, glowing text, CRT scanlines, NES-style containers
+- **JavaScript** — Audio toggle, animated star background, scroll-reveal on elements
+- **[NES.css](https://github.com/nostalgic-css/NES.css)** — Retro pixel UI framework for containers, buttons, and progress bars
+- **[Press Start 2P](https://fonts.google.com/specimen/Press+Start+2P)** — Google Font giving that authentic arcade display look
+- **[VT323](https://fonts.google.com/specimen/VT323)** — Secondary retro monospace font
+- **Animated GIFs** — Sourced from the [GifCities](https://gifcities.org/) GeoCities archive
+
+---
+
+## 🖼️ Screenshots
+
+> *(Add screenshots of each page here once deployed)*
+
+| Home | About | Skills |
+|------|-------|--------|
+| ![Home](assets/images/screenshot-home.png) | ![About](assets/images/screenshot-about.png) | ![Skills](assets/images/screenshot-skills.png) |
+
+---
+
+## ✅ Testing
+
+### HTML Validation
+All pages were run through the [W3C HTML Validator](https://validator.w3.org/) with no errors.
+
+![HTML Validation](image.png)
+
+### CSS Validation
+Stylesheets were tested using the [W3C CSS Validator (Jigsaw)](https://jigsaw.w3.org/css-validator/) with no errors.
+
+![CSS Validation](image-1.png)
+
+### Manual Testing
+
+| Test | Expected | Result |
+|------|----------|--------|
+| Nav links work on all pages | Navigate correctly between pages | ✅ Pass |
+| Audio toggle plays/pauses BGM | Button toggles audio on click | ✅ Pass |
+| GIFs load on all pages | All geocities archive GIFs visible | ✅ Pass |
+| Responsive on mobile (375px) | Layout stacks cleanly | ✅ Pass |
+| Responsive on tablet (768px) | Layout adapts correctly | ✅ Pass |
+| Hover effects on links & buttons | Glow / scale effects trigger | ✅ Pass |
+| Footer links open correct pages | GitHub and LinkedIn open in new tab | ✅ Pass |
+
+---
+
+## 🐞 Known Bugs
+
+- No bugs currently identified.
+- *Note: Some archived GeoCity GIFs may fail to load if the Wayback Machine is slow or unavailable — this is an external dependency outside the project's control.*
+
+---
 
 ## 🚀 Deployment
-The site is deployed using Vercel, making it easy for you to view and explore. For local development or modifications, you can clone the repository.
 
-## 🔁 Cloning of the Repository Code locally
-1. Go to the GitHub repository for this project.
-2. Click on the Code button above the project files.
-3. Copy the HTTPS link of the repository.
-4. Open your IDE or terminal, and paste the URL to clone the repository.
-5. You're all set! Now you can run the project locally.
+This site is deployed via **[Vercel](https://vercel.com/)**.
 
-## 🏆 Credits
-A big thank you to the following resources and tools that made this project possible:
+To deploy your own copy:
+1. Push the repository to GitHub
+2. Go to [vercel.com](https://vercel.com/) and import the repo
+3. Vercel auto-detects it as a static site — click **Deploy**
+4. Your site will be live at `https://your-project.vercel.app`
 
-* [Google Fonts](https://fonts.google.com/) : For providing the fantastic fonts used in the project.
-* Vercel App: Hosting the deployment of this portfolio site.
-* [Gifcities](https://gifcities.org/): Source for nostalgic GIFs that bring the site to life.
-* [W3Schools](https://www.w3schools.com/): For HTML and CSS support and examples.
-* [StackOverflow](https://stackoverflow.com/): The amazing community that helped me solve various coding challenges.
-* [W3C HTML Validator](https://validator.w3.org/): For ensuring my HTML is up to standard.
-* [W3C Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/): For validating my CSS code.
-* [Ness.css](https://github.com/nostalgic-css/NES.css?tab=readme-ov-file): A retro design framework that provided pixelated text and cursor styles for a vintage look.
+---
+
+## 💻 Running Locally
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/HBica05/vintage-visionary.git
+   ```
+2. Navigate into the project folder:
+   ```bash
+   cd vintage-visionary
+   ```
+3. Open `index.html` in your browser — or use the [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extension in VS Code for best results.
+
+> 💡 **Tip:** No build step or dependencies needed. This is pure HTML, CSS, and JavaScript.
+
+---
+
+## 🏆 Credits & Resources
+
+| Resource | Use |
+|----------|-----|
+| [Google Fonts](https://fonts.google.com/) | Press Start 2P & VT323 pixel fonts |
+| [NES.css](https://github.com/nostalgic-css/NES.css) | Retro pixel UI components |
+| [GifCities](https://gifcities.org/) | Animated GIFs from the GeoCities archive |
+| [W3C HTML Validator](https://validator.w3.org/) | HTML validation |
+| [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) | CSS validation |
+| [Vercel](https://vercel.com/) | Deployment & hosting |
+| [W3Schools](https://www.w3schools.com/) | HTML & CSS reference |
+| [Stack Overflow](https://stackoverflow.com/) | Community troubleshooting support |
+
+---
 
 ## 📞 Contact
-Feel free to reach out to me via email or connect with me on social media. I’m always excited to collaborate on creative projects or chat about web design!
-- [LinkedIn]()
-- Gmail: bicahaadiyah@gmail.com
+
+Made with 💾 by **Haadiyah Bica**
+
+- 🔗 [LinkedIn](https://www.linkedin.com/in/haadiyah-bica-34b182302/)
+- 🐙 [GitHub](https://github.com/HBica05)
+- 📧 bicahaadiyah@gmail.com
+
+---
+
+*© 1996 Haadiyah Bica. All rights reserved. Best viewed in Netscape Navigator. 🌐*
